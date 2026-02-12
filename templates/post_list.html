@@ -6,10 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <nav="navbar">
-        <ul>
-            <li><a href="{% url 'post_list' %}">Home</a></li>
-        </ul>
-    </nav>
+    {% extends "base.html" %}
+
+    {% block content %}
+    <h1>Blog Posts</h1>
+    <p>Welcome to the blog post list page.</p>
+    {% endblock %}
 </body>
 </html>

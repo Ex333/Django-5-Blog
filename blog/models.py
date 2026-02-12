@@ -11,7 +11,7 @@ class Post(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ('-published')
+        ordering = ('-published',)
         indexes = [
             models.Index(fields=['-published']),
         ]
